@@ -1,0 +1,138 @@
+.navbar-container{
+   padding: 1%;
+}
+.is-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container img{
+    width: 215px;
+    cursor: pointer;
+}
+
+/* .container2{
+    padding: 2%;
+    background: url("../img/navbar-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/
+
+.nav-list{
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-list-item{
+    list-style: none;
+    cursor:pointer;
+}
+
+.nav-list-item:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.nav-icon{
+    gap: 15px;
+}
+
+.icon{
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+.icon:hover{
+    opacity: 1;
+    scale: 1.5;
+    transition: 0.3s;
+}
+
+button{
+    display: none;
+}
+
+.burgerMenuCont{
+    display: none;
+}
+
+@media screen and (max-width:1080px){
+    button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor:pointer;
+    }
+
+    .burgerLine{
+        width: 25px;
+        height: 3px;
+        border-radius: 10px;
+        background: #fff;
+        margin: 3px;
+    }
+
+    .container2, .container3{
+        display: none;
+    }
+    .burger-container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        z-index: 1;
+
+
+    }
+    .is-flex-column{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end ;
+
+    }
+    .burgerMenuCont{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background-color: rgba(37, 37, 37, 0.4);
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        left: 60vw;
+        top: 0;
+        overflow: hidden ;
+        gap: 5%;
+    }
+    .nav-list-item, .container-burger2{
+       padding-right: 25px;
+    }
+
+    .container-burger{
+        position: relative;
+        top: 2vh;
+    }
+
+    .is-flex{
+        flex-wrap: nowrap;
+    }
+
+    .burgerMenuCont{
+        z-index: 3;
+    }
+
+    .burger-container{
+        z-index: 4;
+    }
+}
+
+

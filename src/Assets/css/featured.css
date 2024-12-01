@@ -1,0 +1,60 @@
+.FeaturedCreations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FeCrTitle{
+    color: #FEB061 ;
+}
+
+.FeCrCategory{
+    background-color: #2F2F2F;
+    border-radius:43.5px ;
+}
+
+.FeCrCategoryForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 60vw;
+}
+
+.FeCrCategoryForm > button{
+    color: #fff;
+    border: 1px solid #FEB061;
+    margin: 15px;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.FeCrCategoryForm > button:focus{
+    background-color: #FEB061;
+    color: #2F2F2F;
+}
+
+.FESearch{
+    margin: 30px;
+}
+
+.search {
+    width: 30vw;
+    border-radius: 15px;
+    padding: 1.5% 0 1.5% 25px; /* Adjust padding as needed */
+  }
+  
+.search::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/glass.svg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

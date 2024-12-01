@@ -1,0 +1,150 @@
+.exp-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    position: relative;
+    bottom: 25%;
+}
+
+.expertise-component{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+.area{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.cards-of-exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.exp-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-top:7% ;
+    gap: 7%;
+    border: 2px solid #FEB061;
+    width: 357px;
+    height: 176px;
+    border-radius: 17px;
+}
+
+.exp-card > h1{
+    color: #FEB061;
+    font-size: xxx-large;
+}
+
+.exp-card > h2 {
+    width: 200px;
+    white-space: wrap;
+}
+
+
+
+.card-exp{
+    background: url(../img/ExpertiseImg/bg.svg) no-repeat ;
+    background-size: cover;
+    width: 438px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center
+}
+
+.title-exp{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-exp {
+        width: 320px; /* Tablet ekranına uygun genişlik */
+        height: 280px; /* Tablet ekranına uygun yükseklik */
+        font-size: x-large; /* Tablet için daha küçük yazı boyutu */
+    }
+    .expertise-component{
+       flex-wrap: wrap;
+    }
+
+    .exp-card{
+        width: 50vw;
+
+    }
+    
+    .exp-card > h1{
+        color: #FEB061;
+        font-size: xxx-large;
+    }
+    
+    .exp-card > h2 {
+        width: 200px;
+        white-space: wrap;
+    }
+  
+    
+}
+
+/* Mobil Ekranlar İçin (Maksimum 767px) */
+@media (max-width: 767px) {
+    .card-exp {
+        width: 100%; /* Mobilde tam genişlik */
+        height: 200px; /* Mobil için daha küçük yükseklik */
+        font-size: large; /* Mobil ekranlarda daha küçük yazı boyutu */
+        padding: 10px; /* Mobilde kenar boşluğu */
+    }
+
+    .web-img,.brand-img{
+        width: 100%;
+    }
+
+    .photosavage{
+        display: none;
+    }
+
+    .expertise-component{
+        flex-wrap: wrap;
+     }
+
+     .exp-card{
+        width: 40vw;
+        height: 10vh;
+        padding-left: 2%;
+
+    }
+
+    .exp-card > h1{
+        color: #FEB061;
+        font-size: xx-large;
+    }
+    
+    .exp-card > h2 {
+        width: 200px;
+        font-size: medium;
+        white-space: wrap;
+    }
+}     
+     

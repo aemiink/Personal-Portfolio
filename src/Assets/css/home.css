@@ -1,0 +1,457 @@
+.Home{
+    width: 90vw;
+    height: 75vh;
+    position: relative;
+    left: 5vw;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.png");
+    background-clip: padding-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.hire-me-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    background-color: #d3d3d3; /* Butonun sol tarafı için renk */
+    border-radius: 25px;
+    position: relative;
+    border: 2px solid #000; /* Dış çerçeve rengi */
+    overflow: hidden;
+    outline:none;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.button-text {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: black; /* Butonun sağ tarafı için renk */
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    right: -4px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.hire-me-button:hover .button-icon {
+    background-color: #fff; /* Hover durumunda sağ tarafın rengi */
+    color: black;
+    background-blend-mode: difference;
+    transition: 0.3s;
+}
+
+.hire-me-button:hover .button-text {
+    color: #fff; /* Hover durumunda sağ tarafın rengi */
+    transition: 0.3s;
+}
+
+.hire-me-button:hover{
+    background: black;
+    transition: 0.3s;
+}
+
+.span-text{
+    font-weight: 300;
+}
+
+.hire-me-image{
+    position: relative;
+    top: 15vh;
+
+}
+
+.hire-me-exp{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    animation: rotation 20s infinite linear;
+}
+
+.are-of-text{
+    font-size: x-large;
+    position: relative;
+    top: 10vh;
+}
+
+
+.About-Me{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+
+}
+
+
+.am-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 5vh 5vw;
+}
+.we-area{
+    margin-top: 2.5vw;
+}
+
+.am-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2vw;
+    gap: 1vw;
+}
+
+.span-we{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.am-divider{
+    border: 1px white dashed;
+    margin-top: 1vw;
+}
+
+
+.work-experience > ul{
+    list-style: none;
+}
+
+.list-item-we{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item-we > .span-we{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 3vh;
+}
+
+.slider-container{
+    position: relative;
+    right: 8.7vw;
+    background-color: #FEB061;
+    transform: rotateZ(4deg);
+    margin: 5vh;
+    width: 102vw;
+    overflow: hidden;
+}
+
+.slider-track{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    background-color: #FEB061;
+}
+
+.contact-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #006FA6;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+
+}
+
+.contact-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 2vw;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px dashed #006FA6;
+    z-index: 1;
+    position: relative;
+    bottom: 15vw;
+    left: 36vw;
+
+}
+
+@keyframes rotation {
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .hire-me-image {
+        width: 300px;
+        position: relative;
+        top: 0;
+        right: 5vw;
+    }
+
+    .hire-me-exp{
+        width: 100px;
+        bottom: 10vw;
+       left: 0;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+        gap: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1-text{
+        text-align: center;
+    }
+
+    .are-of-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: unset;
+    }
+    .hire-me-button {
+        width: 75%;
+    }
+    .hire-me-img{
+        margin-top:5vh;
+    }
+
+    .About-Me{
+        margin-top: 20vh;
+    }
+
+    .am-description > img{
+        width: 750px;
+    }
+
+    .span-we{
+        justify-content: center;
+        gap: 15vw;
+        width: 100%;
+        font-size: x-large;
+        font-weight: bold;
+
+    }
+
+    .work-experience{
+        position: relative;
+        right: 30px;
+    }
+
+    .am-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-item-we{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-item-we > .span-we{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .slider-container{
+        position: relative;
+        right: 8.7vw;
+        background-color: #FEB061;
+        transform: rotateZ(4deg);
+        margin: 5vh;
+        width: 102vw;
+        height: 13vh;
+        overflow: hidden;
+    }
+
+    .slide > img{
+        width: 150px;
+    }
+
+    .slider-track{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 85px;
+        background-color: #FEB061;
+    }
+
+    .contact-button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: #006FA6;
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+
+    }
+
+    .contact-cont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 260px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px dashed #006FA6;
+        z-index: 1;
+        position: relative;
+        bottom: 25vw;
+        left: 36vw;
+
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .hire-me-exp{
+        width: 100px;
+        bottom: 20vw;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+        gap:1vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1-text{
+        text-align: center;
+    }
+
+    .are-of-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: unset;
+    }
+
+    .background {
+        height: 102%;
+    }
+    .hire-me-img{
+        margin-top:5vh;
+    }
+    .About-Me{
+        margin-top: 20vh;
+    }
+
+    .am-description > img{
+        width: 375px;
+    }
+
+    .span-we{
+        justify-content: center;
+        gap: 10vw;
+        width: 100%;
+        font-size: large;
+        font-weight: bold;
+
+    }
+
+    .work-experience{
+        position: relative;
+        right: 30px;
+    }
+
+    .am-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-item-we{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-item-we > .span-we{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    .contact-cont{
+        width: 260px;
+        height: 260px;
+        position: relative;
+        bottom: 48vw;
+        left: 20vw;
+    }
+
+}
+
